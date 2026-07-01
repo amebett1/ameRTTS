@@ -1,0 +1,11 @@
+{
+    "target_lang": "vi",
+    "hotkey_translate": "f5",
+    "hotkey_crop": "f6",
+    "region": {
+        "top": 674,
+        "left": 1344,
+        "width": 147,
+        "height": 32
+    }
+}
