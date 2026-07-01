@@ -2,3 +2,4 @@ mss
 easyocr
 deep-translator
 keyboard
+customtkinter
