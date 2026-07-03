@@ -1,5 +1,6 @@
 mss
-easyocr
+pytesseract
+Pillow
 deep-translator
 keyboard
 customtkinter

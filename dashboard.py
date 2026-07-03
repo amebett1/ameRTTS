@@ -19,8 +19,8 @@ LANGUAGES = {
 class DashboardUI:
     def __init__(self, start_callback):
         self.root = ctk.CTk()
-        self.root.title("ameRTTS Control Panel")
-        self.root.geometry("420x350")
+        self.root.title("AmeRTTS")
+        self.root.geometry("400x400")
         self.root.resizable(False, False)
         self.start_callback = start_callback
         
@@ -28,23 +28,23 @@ class DashboardUI:
         
     def create_widgets(self):
         # Tiêu đề với Font Roboto hiện đại
-        title_lbl = ctk.CTkLabel(self.root, text="ameRTTS Control Panel", font=ctk.CTkFont(family="Roboto", size=24, weight="bold"))
+        title_lbl = ctk.CTkLabel(self.root, text="AmeRTTS", font=ctk.CTkFont(family="Roboto", size=24, weight="bold"))
         title_lbl.pack(pady=(25, 20))
         
         btn_frame = ctk.CTkFrame(self.root, fg_color="transparent")
         btn_frame.pack(pady=10)
         
         # Nút phụ (Secondary) - Thiết kế Outline
-        ctk.CTkButton(btn_frame, text="🔍 Kiểm tra hệ thống", width=220, height=35,
+        ctk.CTkButton(btn_frame, text="Kiểm tra hệ thống", width=220, height=35,
                       fg_color="transparent", border_width=2, text_color=("gray10", "#DCE4EE"),
                       command=self.check_system).pack(pady=8)
                       
-        ctk.CTkButton(btn_frame, text="⚙️ Cài đặt", width=220, height=35,
+        ctk.CTkButton(btn_frame, text="Cài đặt", width=220, height=35,
                       fg_color="transparent", border_width=2, text_color=("gray10", "#DCE4EE"),
                       command=self.open_settings).pack(pady=8)
         
         # Nút chính (Primary) - Thiết kế Solid nền xanh
-        self.start_btn = ctk.CTkButton(btn_frame, text="▶️ BẮT ĐẦU", width=220, height=45, 
+        self.start_btn = ctk.CTkButton(btn_frame, text="BẮT ĐẦU", width=220, height=45, 
                                        font=ctk.CTkFont(size=16, weight="bold"),
                                        fg_color="#10B981", hover_color="#059669", # Xanh lá hiện đại
                                        command=self.start_app)

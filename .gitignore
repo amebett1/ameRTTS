@@ -22,5 +22,6 @@ rad.json
 #Test results file
 TestResults.xml
 .png
-
+config.json
+.jpg
 __pycache__/
